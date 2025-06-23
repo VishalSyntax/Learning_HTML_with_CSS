@@ -8,10 +8,13 @@
         .t_uppercase {
             text-transform: uppercase;
             color: blue;
+            text-decoration: underline;
         }
          .t_lowercase {
             text-transform: lowercase;
             color: red;
+            text-align: center;
+            text-decoration: overline;
         }
          .t_capitalize {
             text-transform: capitalize;
@@ -25,23 +28,43 @@
         .t_right {
             text-align: right;
         }
+        .t_size{
+            font-size: 150px;
+        }
+        .t_indent {
+            text-indent: 50px;
+        }
+        .t_height {
+            line-height: 30px;
          .t_left {
             text-align: left;
         }
-        t.underline {
-            text-transform: underline;
-            text-decoration: underline;
+        .w_spacing {
+            word-spacing: 80px;
         }
-        t.overline {
-            text-decoration: overline;
+        .l_spacing {
+            letter-spacing: 90px;
         }
-        t.line-through {
-            text-decoration: line-through;
+        .t_shadow {
+            text-shadow: 2px 2px 4px #000000;
+            color: purple;
+           font-size: 80px;
+           text-align: center;
+           color: cyan;
         }
+    
     </style>
 </head>
 
 <body>
+    <h3 class="w_spacing">VishaL x</h3>
+    <h3 class="l_spacing">Hello i am Vishal X</h3>
+    <h2 class="t_shadow">Hello i am Vishal X</h2>
+
+    <p class="t_indent t_height"> A primary key is used to uniquely identify a row in a table and must have a unique value. On the other hand, a unique key ensures that a column or combination of columns has a unique value but does not necessarily identify the row.
+        Normalization is the process of organizing data in a database to minimize redundancy and dependency. It involves breaking down a table into smaller tables and establishing relationships between them.
+        A transaction is a sequence of SQL statements that are executed as a single logical unit of work. It ensures data consistency and integrity by either committing all changes or rolling them back if an error occurs.
+</p>
     <h1 class="t_center">This for center align</h1>
     <h1 class="t_right">This for right align</h1>
     <h1 class="t_left">This for left align</h1>
