@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+           padding-top: 20px;
+           gap:10px
+        }
+        .box {
+            
+            background-color: hsl(314, 92%, 49%);
+            border-radius: 10px;
+            height: 200px;
+            width: 200px;
+            color: white;
+            font-weight: 900;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            transition: transform 4s ease;
+        }
+        .box1:hover {
+            transform: translateX(125px,125px) translateY(100px);
+            background-color: rgb(245, 139, 197);
+        }
+        .box2:hover {
+            transform: translateX(100px) translateY(100px);
+            background-color: rgb(249, 158, 217);
+        }
+        .box3:hover {
+            transform: translateY(125px);
+        }
+        .box4:hover {
+            transform: rotate(45deg);
+            background-color: rgb(249, 158, 217);
+        }
+        .box5:hover {
+            transform: scale(1.5);
+            background-color:rgb(249, 158, 217;
+        }
+        .box6:hover {
+            transform: skewX(20deg);
+            background-color: rgb(249, 158, 217);
+        }
+        .box7:hover {
+            transform: skewY(20deg);
+            background-color: rgb(249, 158, 217);
+        }
+        .box8:hover {
+            transform: translateX(100px) translateY(100px) rotate(45deg) scale(1.5) skewX(20deg) skewY(20deg);
+            background-color: rgb(249, 158, 217);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Translate</div>
+        <div class="box box2">translate x</div>
+        <div class="box box3">translate y</div>
+        <div class="box box4">rotate</div>
+        <div class="box box5">scale</div>
+        <div class="box box6">skewX</div>
+        <div class="box box7">skewY</div>
+        <div class="box box8">multi</div>
+
+    </div>
+</body>
+</html>
